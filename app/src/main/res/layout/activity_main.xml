@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textViewTablaRecords"
+            android:layout_width="match_parent"
+            android:layout_height="37dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="TABLA DE RECORDS" />
+
+        <TextView
+            android:id="@+id/textViewRecords"
+            android:layout_width="match_parent"
+            android:layout_height="331dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="recordsNombres" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_gravity="center"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/editTextNombreUsuario"
+            android:layout_width="374dp"
+            android:layout_height="89dp"
+            android:layout_weight="0"
+            android:ems="10"
+            android:gravity="center"
+            android:hint="Introduce nombre y apellidos"
+            android:inputType="text"
+            android:onClick="datosUsuario" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_weight="0" />
+
+        <Button
+            android:id="@+id/buttonJugar"
+            android:layout_width="155dp"
+            android:layout_height="65dp"
+            android:layout_weight="0"
+            android:onClick="jugar"
+            android:text="Jugar" />
+
+        <Button
+            android:id="@+id/buttonSalir"
+            android:layout_width="121dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0"
+            android:onClick="salir"
+            android:text="Salir" />
+
+    </LinearLayout>
+
+</LinearLayout>
